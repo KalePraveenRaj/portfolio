@@ -452,3 +452,56 @@ section p {
   margin: 15px auto;
   border: none;
 }
+
+.projects-container {
+  display: flex;
+  flex-direction: column;  /* stack items vertically */
+  gap: 25px;               /* space between cards */
+  padding: 20px;
+  max-width: 700px;        /* optional: to keep cards centered */
+  margin: 0 auto;          /* center align the column */
+}
+
+.project-card {
+  background: #1c1c1c;
+  color: white;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+  min-height: 420px;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.project-card a {
+  font-size: 24px;
+  color: grey;
+  margin: 15px 15px 0 10px; /* top margin gives gap from text */
+  display: inline-block;    /* ensures margin-top works */
+  transition: color 0.3s;
+}
+
+.project-icons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center; /* keep them centered */
+  gap: 150px;               /* space between icons */
+}
+
+.project-icons a {
+  font-size: 26px;
+  color: grey;
+  transition: color 0.3s;
+}
