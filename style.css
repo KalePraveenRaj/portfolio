@@ -513,7 +513,7 @@ section p {
 @media (max-width: 768px) {
   /* Navbar */
   nav {
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
   }
 
