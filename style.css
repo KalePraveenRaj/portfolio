@@ -508,6 +508,7 @@ section p {
 
 /* Base (desktop-first styles are already there) */
 
+
 /* ---------- Mobile Responsive ---------- */
 @media (max-width: 768px) {
   /* Navbar */
@@ -544,10 +545,10 @@ section p {
     gap: 20px;
   }
 
-  /* Skills */
+  /* Skills → always 4 columns, auto-rows */
   .skills-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 15px;
   }
 
@@ -558,11 +559,13 @@ section p {
     gap: 20px;
   }
 
-  /* Contact section */
+  /* Contact section → stacked column */
   .contact-container {
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 20px;
   }
 
   .contact-info {
@@ -585,8 +588,8 @@ section p {
     font-size: 14px;
   }
 
+  /* Keep 4 columns here too */
   .skills-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
-
